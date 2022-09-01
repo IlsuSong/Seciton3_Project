@@ -1,0 +1,1 @@
+web: gunicorn --workers=1 'dia_app:create_app()'
