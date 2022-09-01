@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Diamonds
+    </title>
+  </head>
+  <body>
+    <h1>Diamond의 가격 예측</h1>
+    <form method="POST" action="{{url_for('result')}}">
+      <label>Carat : <input type="text" name="carat" value=""></label>
+      <br><br>    
+      <label>Cut</label><br>
+      <label><input type="radio" name="cut" value="4">Ideal</label>
+      <label><input type="radio" name="cut" value="3">Premium</label>
+      <label><input type="radio" name="cut" value="2">Very Good</label>
+      <label><input type="radio" name="cut" value="1">Good</label>
+      <label><input type="radio" name="cut" value="0">Fair</label>
+      <br><br>
+      <label>Color</label><br>
+      <label><input type="radio" name="color" value="6">D</label>
+      <label><input type="radio" name="color" value="5">E</label>
+      <label><input type="radio" name="color" value="4">F</label>
+      <label><input type="radio" name="color" value="3">G</label>
+      <label><input type="radio" name="color" value="2">H</label>
+      <label><input type="radio" name="color" value="1">I</label>
+      <label><input type="radio" name="color" value="0">J</label>
+      <br><br>
+      <label>Clarity</label><br>
+      <label><input type="radio" name="clarity" value="7">IF</label>
+      <label><input type="radio" name="clarity" value="6">VVS1</label>
+      <label><input type="radio" name="clarity" value="5">VVS2</label>
+      <label><input type="radio" name="clarity" value="4">VS1</label>
+      <label><input type="radio" name="clarity" value="3">VS2</label>
+      <label><input type="radio" name="clarity" value="2">SI1</label>
+      <label><input type="radio" name="clarity" value="1">SI2</label>
+      <label><input type="radio" name="clarity" value="0">I1</label>
+      <br><br>    
+      <label>Depth : <input type="text" name="depth" value=""></label>
+      <br><br>
+      <label>Table : <input type="text" name="table" value=""></label>
+      <br><br>
+      <label>x : <input type="text" name="x" value=""></label>
+      <br><br>
+      <label>y : <input type="text" name="y" value=""></label>
+      <br><br>
+      <label>z : <input type="text" name="z" value=""></label>
+      <br><br>
+      <input type="submit" value="예측하기">   <input type='reset' value="초기화">
+    </form>
+  </body>
+</html>
